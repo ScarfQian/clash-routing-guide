@@ -1,0 +1,18 @@
+# 日期：2026-10-15；创建人：项目维护者。
+# 无法联网的虚构占位节点；只用于理解结构和离线配置检查。
+# 在本地副本中替换成供应商提供的完整节点；不要把私有副本上传。
+proxies:
+  - name: Static-Main
+    type: socks5
+    server: static-main.example.invalid
+    port: 1080
+    username: REPLACE_ME
+    password: REPLACE_ME
+    udp: false
+  - name: Static-Backup
+    type: socks5
+    server: static-backup.example.invalid
+    port: 1080
+    username: REPLACE_ME
+    password: REPLACE_ME
+    udp: false

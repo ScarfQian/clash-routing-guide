@@ -1,0 +1,19 @@
+[
+  ".gitignore",
+  "AGENTS.md",
+  "README.md",
+  "PUBLIC_FILES.json",
+  "package.json",
+  "docs/261015-guide.md",
+  "docs/261015-validation.md",
+  "docs/261015-privacy.md",
+  "docs/261015-chaining.md",
+  "examples/design.example.json",
+  "examples/subscription.example.json",
+  "examples/static-provider.example.yaml",
+  "src/route-core.js",
+  "tools/guide.mjs",
+  "tools/release.mjs",
+  "tests/routing.test.mjs",
+  "tests/privacy.test.mjs"
+]

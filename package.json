@@ -1,0 +1,16 @@
+{
+  "name": "clash-routing-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "使用虚构示例逐步设计 Clash / Mihomo 分流，凭据留在本地。",
+  "scripts": {
+    "guide": "node tools/guide.mjs init",
+    "build": "node tools/guide.mjs build",
+    "demo": "node tools/guide.mjs demo",
+    "test": "node --test tests/*.test.mjs",
+    "privacy": "node tools/release.mjs check",
+    "check": "npm test && npm run privacy",
+    "release": "node tools/release.mjs prepare"
+  },
+  "engines": { "node": ">=22" }
+}

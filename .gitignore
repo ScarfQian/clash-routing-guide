@@ -1,0 +1,16 @@
+# 本地输入、节点凭据、生成配置和备份禁止随项目上传。
+local/
+dist/
+backups/
+logs/
+node_modules/
+.env
+.env.*
+*.local.*
+*.log
+*.db
+*.sqlite*
+*.har
+*.pcap*
+.DS_Store
+Thumbs.db

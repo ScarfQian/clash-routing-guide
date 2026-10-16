@@ -1,0 +1,20 @@
+{
+  "mixed-port": 17890,
+  "allow-lan": false,
+  "mode": "rule",
+  "log-level": "info",
+  "proxies": [
+    { "name": "US-A", "type": "socks5", "server": "192.0.2.10", "port": 1080 },
+    { "name": "US-B", "type": "socks5", "server": "192.0.2.11", "port": 1080 },
+    { "name": "JP-A", "type": "socks5", "server": "192.0.2.12", "port": 1080 }
+  ],
+  "proxy-groups": [
+    { "name": "Subscription", "type": "select", "proxies": ["US-A", "US-B", "JP-A"] },
+    { "name": "Media", "type": "select", "proxies": ["Subscription", "DIRECT"] }
+  ],
+  "rules": [
+    "DOMAIN-SUFFIX,local-service.example,DIRECT",
+    "DOMAIN-SUFFIX,video.example,Media",
+    "MATCH,Subscription"
+  ]
+}

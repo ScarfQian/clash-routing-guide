@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "subscriptionEntry": "",
+  "staticExit": {
+    "enabled": false,
+    "providerPath": "./proxy_providers/static.local.yaml"
+  },
+  "ordinary": {
+    "mode": "subscription",
+    "include": "美国|🇺🇸|United States|\\bUS\\b",
+    "exclude": "剩余流量|到期|重置|更新订阅",
+    "interval": 300,
+    "tolerance": 100
+  },
+  "directServices": [],
+  "extraDirectDomains": [],
+  "extraGptHosts": [],
+  "dns": { "enabled": false }
+}
